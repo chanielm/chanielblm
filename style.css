@@ -8,7 +8,7 @@
   padding-left:20px;
   padding-right: 20px;
   padding-bottom:30px;
-  background-color:rgb(255,255,255);
+  background-color:rgba(0, 0, 0, 0.400);
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.253));
   z-index: 1;
 }
@@ -22,7 +22,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  background-color:rgb(0, 0, 0);
+  background-color:rgba(0, 0, 0, 0.300);
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.253));
   z-index: 1;
 }
@@ -38,8 +38,13 @@
   text-decoration: underline;
 }
 #blm {
-  font-size: 40px;
+  font-size: 45px;
   text-align: center;
+  color: white;
+}
+ul {
+  list-style-type: square;
+  font-size: 20px;
 }
 #about {
   margin-top: 180px;
@@ -51,7 +56,7 @@
   background-color:rgb(255,255,255);
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.253));
 }
-#unnamed {
+#alm {
   margin-top: 30px;
   width:100%;
   padding-top: 20px;
@@ -85,6 +90,12 @@ body {
   background-image: url(https://www.gannett-cdn.com/presto/2020/06/03/PSAS/9d5d7ab1-7be0-424d-a259-8b0fa91c3ec5-20200602_BLM_SEASIDE_PROTEST__004.JPG?auto=webp&crop=2999,1687,x0,y70&format=pjpg&width=1200);
   background-attachment: fixed;
   font-family: "sans-serif";
+}
+h2 {
+  font-size: 35px;
+}
+p {
+  font-size: 20px;
 }
 #aboutcaption {
   background-color: rgb(235,235,235);
