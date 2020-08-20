@@ -1,32 +1,34 @@
 #top-bar {
   position: fixed;
   top:0px;
-  left:0px;
-  right:0px;
   width:100%;
-  height: 100px;
   padding-left:20px;
   padding-right: 20px;
-  padding-bottom:30px;
+  padding-bottom: 10px;
   background-color:rgba(0, 0, 0, 0.200);
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.253));
   z-index: 1;
 }
 #nav {
   position: fixed;
-  top:100px;
-  left:0px;
-  right:0px;
+  top: 123px;
   width:100%;
-  height: 50px;
+  height: 74px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom-style: solid;
   border-bottom-color: white;
-  text-align: center;
+  text-align: left;
   background-color:rgba(0, 0, 0, 0.200);
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.253));
   z-index: 1;
+}
+#backtotop {
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-left: 20px
 }
 #nav a {
   font-size:20px;
@@ -44,23 +46,19 @@
   text-align: center;
   color: white;
 }
+#img1 {
+  float: right;
+  margin-right: 30px;
+  width: 300px;
+}
 ul {
   list-style-type: square;
   font-size: 20px;
 }
 #about {
   margin-top: 180px;
-  width:100%;
-  padding-top: 20px;
-  padding-left:20px;
-  padding-right: 20px;
-  padding-bottom:30px;
-  background-color:rgb(255,255,255);
-  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.253));
-}
-#alm {
-  margin-top: 30px;
-  width:100%;
+  margin-left: 3%;
+  width:94%;
   padding-top: 20px;
   padding-left:20px;
   padding-right: 20px;
@@ -70,7 +68,8 @@ ul {
 }
 #issue {
   margin-top: 30px;
-  width:100%;
+  margin-left: 3%;
+  width:94%;
   padding-top: 20px;
   padding-left:20px;
   padding-right: 20px;
@@ -78,20 +77,71 @@ ul {
   background-color:rgb(255,255,255);
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.253));
 }
-#calltoaction {
+#stats {
   margin-top: 30px;
-  width:100%;
+  margin-left: 3%;
+  width:94%;
   padding-top: 20px;
   padding-left:20px;
   padding-right: 20px;
   padding-bottom:30px;
   background-color:rgb(255,255,255);
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.253));
+}
+.morebutton {
+  background-color: transparent;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  font-family: "roboto";
+}
+.more {
+  position: relative;
+  display: inline-block;
+}
+.morestuff {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  min-width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.morestuff a {
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+  font-weight: lighter;
+}
+.morestuff a:hover {
+  background-color: rgb(235, 235, 235);
+  text-decoration: none;
+}
+.more:hover .morestuff {
+  display: block;
+}
+#calltoaction {
+  margin-top: 30px;
+  margin-left: 3%;
+  width:94%;
+  padding-top: 20px;
+  padding-left:20px;
+  padding-right: 20px;
+  padding-bottom:30px;
+  background-color:rgb(255,255,255);
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.253));
+}
+#top {
+  visibility: hidden;
 }
 body {
   background-image: url(https://www.gannett-cdn.com/presto/2020/06/03/PSAS/9d5d7ab1-7be0-424d-a259-8b0fa91c3ec5-20200602_BLM_SEASIDE_PROTEST__004.JPG?auto=webp&crop=2999,1687,x0,y70&format=pjpg&width=1200);
   background-attachment: fixed;
-  font-family: "sans-serif";
+  font-family: "roboto";
 }
 h2 {
   font-size: 35px;
