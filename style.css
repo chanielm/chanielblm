@@ -58,6 +58,7 @@
 ul {
   list-style-type: square;
   font-size: 20px;
+  text-align: left;
 }
 #about {
   margin-top: 180px;
@@ -89,7 +90,8 @@ ul {
   padding-left:20px;
   padding-right: 20px;
   padding-bottom:30px;
-  background-color:rgb(255,255,255);
+  text-align: center;
+  background-color: rgb(255,255,255);
   filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.253));
 }
 .morebutton {
@@ -119,10 +121,12 @@ ul {
 }
 .morestuff a {
   color: black;
-  padding: 20px 5px;
+  padding: 20px 20px;
   text-decoration: none;
   display: block;
   font-weight: lighter;
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .morestuff a:hover {
   background-color: rgb(235, 235, 235);
@@ -153,9 +157,19 @@ body {
 }
 h2 {
   font-size: 35px;
+  text-align: left;
 }
 p {
   font-size: 20px;
+}
+.img2 {
+  width: 80%;
+}
+.img3 {
+  width: 80%;
+}
+#img4 {
+  width: 30%;
 }
 .pet-btn {
   border: none;
@@ -188,12 +202,13 @@ p {
   padding: 10px;
   font-size: 20px;
   color: white;
-  background-color: rgb(255, 0, 100);
+  background-color: rgba(255, 0, 100, 0.4);
   outline: none;
   transition: 0.4s;
+  cursor: not-allowed;
 }
 .submit-btn:hover {
-  background-color: yellow;
+  background-color: rgba(255, 255, 0, 0.4);
   color: black;
   transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
 }
@@ -209,15 +224,43 @@ p {
   background-color: yellow;
   color: black;
   font-size: 20px;
+  outline: none;
 }
 .email-input:focus {
   width: 74%;
   background-color: rgb(255, 0, 100);
   color: white;
 }
-#note {
+.email-input:hover {
+  width: 74%;
+  background-color: rgb(255, 0, 100);
+  color: white;
+}
+.note {
   font-size: 15px;
-  color: #cccccc
+  color: #cccccc;
+}
+.other-btn {
+  border: none;
+  border-left: solid;
+  border-left-color: rgb(255, 0, 100); 
+  text-align: left;
+  background: rgb(255,255,0);;
+  font-family: roboto;
+  font-size: 25px;
+  width: 80%;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  padding: 10px;
+  margin: 1px;
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+.other-btn:hover {
+  background-color: rgb(255, 0, 100);
+  color: white;
+  width: 100%;
 }
 #aboutcaption {
   background-color: rgb(235,235,235);
