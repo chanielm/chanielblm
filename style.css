@@ -34,12 +34,14 @@
   font-size:20px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  margin-right: 20px;
-  margin-left: 20px;
+  font-weight: normal;
+  margin-right: 30px;
+  margin-left: 30px;
+  transition: 0.4s;
 }
 #nav a:hover {
   text-decoration: underline;
+  color: rgb(255, 0, 100);
 }
 #blm {
   font-size: 45px;
@@ -98,6 +100,9 @@ ul {
   outline: none;
   font-family: "roboto";
 }
+.morebutton::after {
+  content: ' \21B4';
+}
 .more {
   position: relative;
   display: inline-block;
@@ -106,16 +111,13 @@ ul {
   display: none;
   position: absolute;
   background-color: rgb(255, 255, 255);
-  min-width: 250px;
+  min-width: 300px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 .morestuff a {
   color: black;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 20px 5px;
   text-decoration: none;
   display: block;
   font-weight: lighter;
@@ -151,6 +153,28 @@ h2 {
 }
 p {
   font-size: 20px;
+}
+.pet-btn {
+  border: none;
+  border-left: solid;
+  border-left-color: rgb(255, 0, 100); 
+  text-align: left;
+  background: rgb(255,255,0);;
+  font-family: roboto;
+  font-size: 25px;
+  width: 80%;
+  cursor: pointer;
+  outline: none;
+  color: #000;
+  padding: 10px;
+  margin: 1px;
+  transition: 0.4s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+.pet-btn:hover {
+  background-color: rgb(255, 0, 100);
+  color: white;
+  width: 100%;
 }
 #aboutcaption {
   background-color: rgb(235,235,235);
